@@ -8,17 +8,6 @@ package com.company;
         super(name);
     }
     //////////////////////////////Methods//////////////////////////
-        //Name
-        //public String getName(){
-        //    return name;
-        //}
-        //public void setName(String name){
-        //    this.name = name;
-        //}
-        //Length of time to read
-        //public abstract void how_long_item();
-        //Item size e.g. weight or data amount
-        //public abstract void how_big_item(double item_size);
 
 
 
