@@ -1,5 +1,3 @@
-package test_folder;
-
 import com.company.Digital;
 import com.company.Films;
 import org.junit.Test;
