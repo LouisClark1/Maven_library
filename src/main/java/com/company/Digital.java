@@ -29,8 +29,10 @@ public class Digital extends Audiobook implements isAvalible{
     }
 
     @Override
-    public void checkAvalibility() {
+    public String checkAvalibility() {
         System.out.println("You can take this out of the library");
+        String message = "You can take this out of the library";
+        return message;
     }
 
 }
