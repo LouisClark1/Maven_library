@@ -16,6 +16,8 @@ public class Cucumber_Test {
     private String testTitle;
     private String actualAnswer;
     private String audiobookAvalibility;
+    private double actualDataSize;
+    private double expectedDigitalSize;
 
     @Given("Film title is default")
     public void title_is_default(){
@@ -42,12 +44,25 @@ public class Cucumber_Test {
     }
 
     @Then("I should be told {string}")
-    public void i_should_be_told(String expectedAnswer){
+    public void i_should_be_told_string(String expectedAnswer){
         assertEquals(expectedAnswer, actualAnswer);
     }
 
+    @Given("Digital audiobook data size is unset")
+    public void digital_audiobook_data_size() {
+        expectedDigitalSize = 0.0;
+    }
 
+    @When("I ask what the data size is")
+    public void digital_audiobook(){
+        Digital  testDigitalAudiobook= new Digital();
+        actualDataSize = testDigitalAudiobook.getDataSize();
+    }
 
+    @Then("I should be told {double}")
+    public void i_should_be_told_double(double expectedDigitalSize){
+        assertEquals(expectedDigitalSize, actualDataSize,0.1);
+    }
 
 
 }
