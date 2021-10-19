@@ -22,9 +22,9 @@ public class BookTest {
     }
     @Test
     public void test_for_digital_audiobook_avalibility(){
-        Digital testDigitalAudiobook1 = new Digital();
+        Digital testDigitalAudiobook = new Digital();
         String expectedMessage = "You can take this out of the library";
-        String actualMessage = testDigitalAudiobook1.checkAvalibility();
+        String actualMessage = testDigitalAudiobook.checkAvalibility();
         assertEquals("Avalibility failure",expectedMessage,actualMessage );
     }
 }
