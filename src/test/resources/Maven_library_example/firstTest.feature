@@ -14,3 +14,8 @@ Feature: firstTest
         Given Digital audiobook data size is unset
         When I ask what the data size is
         Then I should be told 0.0
+
+    Scenario: Default analogue audiobook name is default name
+        Given Analogue audiobook name is unset
+        When I ask what the analogue audiobook title is
+        Then I should be told "Default analogue audiobook title"

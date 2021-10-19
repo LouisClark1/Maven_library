@@ -6,7 +6,7 @@ public class Analogue extends Audiobook{
     /////////////////////////////Constructors//////////////////////
 
     public Analogue(){
-        this("Default digital audiobook title");
+        this("Default analogue audiobook title");
     }
     public Analogue(String name) {
         super(name);
