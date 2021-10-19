@@ -42,16 +42,10 @@ public class Cucumber_Test {
     }
 
     @Then("I should be told {string}")
-    public void i_should_be_told_film(String expectedAnswer){
+    public void i_should_be_told(String expectedAnswer){
         assertEquals(expectedAnswer, actualAnswer);
     }
 
-
-
-    @Then("I should be told {string}")
-    public void i_should_be_told_audiobook(String expectedAnswer){
-        assertEquals(expectedAnswer, actualAnswer);
-    }
 
 
 
