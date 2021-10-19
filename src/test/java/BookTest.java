@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class First_test {
+public class BookTest {
 
     @Test
     public void test_for_Films(){
